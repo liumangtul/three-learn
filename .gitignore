@@ -1,2 +1,8 @@
 node_modules
 .git
+three.sublime-project
+three-learn.komodoproject
+MyProject.komodoproject
+/dist
+/dist/*
+.idea
