@@ -3,6 +3,7 @@ node_modules
 three.sublime-project
 three-learn.komodoproject
 MyProject.komodoproject
+three.sublime-workspace
 /dist
 /dist/*
 .idea
