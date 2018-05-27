@@ -1,7 +1,11 @@
-module.exports = function(THREE,scene){
-	let planeGeo = new THREE.PlaneGeometry(60, 20);
+module.exports = function(THREE, scene) {
+	let axis = new THREE.AxisHelper(20);
+	scene.add(axis);
+
+	let planeGeo = new THREE.PlaneGeometry(60, 20, 30, 10);
 	let planeMaterial = new THREE.MeshLambertMaterial({
-	    color: 0xff3300
+		color: 0xcccccc,
+		dithering: true
 	});
 	let plane = new THREE.Mesh(planeGeo, planeMaterial);
 	plane.position.set(0, -1, 0);
@@ -10,9 +14,10 @@ module.exports = function(THREE,scene){
 
 	let cubeGeo = new THREE.CubeGeometry(2, 2, 2);
 	let cubeMaterial = new THREE.MeshLambertMaterial({
-	    color: 0x00ff44
+		color: 0xffffff
 	});
 	let cube = new THREE.Mesh(cubeGeo, cubeMaterial);
+	// cube.castShadow = true;
 	scene.add(cube);
 
 	return {

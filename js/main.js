@@ -2,10 +2,11 @@ const THREE = require('three');
 
 const scene = require('./scene')(THREE);
 
-const camera = require('./camera')(THREE,scene);
+const camera = require('./camera')(THREE, scene);
 
-const light = require('./light')(THREE,scene);
 
-const mesh = require('./mesh')(THREE,scene);
+const mesh = require('./mesh')(THREE, scene);
 
-const renderer = require('./renderer')(THREE,scene,camera);
+const light = require('./light')(THREE, scene);
+
+const renderer = require('./renderer')(THREE, scene, camera);

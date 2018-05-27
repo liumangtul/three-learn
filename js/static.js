@@ -1,6 +1,6 @@
 module.exports = function(){
 	return{
-		width:400,
-		height:300
+		width:1280,
+		height:960
 	}
 };
